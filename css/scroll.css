@@ -50,6 +50,9 @@ section {
   top: 60px;  
 }
 
+#creative-ID {
+   height: 700px;   
+}
 /*section:nth-child(1) {
   margin-top: 100px;
 }
@@ -125,6 +128,22 @@ section {
     
 }*/
 
+.carousel_image {
+  position: relative;
+  left: 5%;
+  margin: auto;
+  float: center;
+}
+
+.carousel_title {
+  position: relative;
+  text-align: left;
+  vertical-align: top;
+  left: 15%;
+  color: black;
+  font-size: 1.1em;
+    height: 40px;
+}
 
 .image_left {
   position: relative;
