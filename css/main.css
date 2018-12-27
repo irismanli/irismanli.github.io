@@ -258,20 +258,36 @@ header
     margin: auto;
 }
 
-#mText{
+/*
+.meTitle{
     transition: .6s ease;
     position: absolute;
     top: 10%;
     left: 25%;
     color: black;
     font-family: 'Scada', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     text-align: left;
     opacity: 1;
 }
+*/
 
+.meBody{
+    transition: .6s ease;
+    position: absolute;
+    margin-top: 130px;
+    margin-left: 152px;
+    color: black;
+    width: 250px;
+    font-family: 'Scada', sans-serif;
+    font-size: 15px;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    text-align: left;
+    opacity: 1;
+}
 /**
 svg:hover path.hex1_draw {
   stroke-dasharray: 444;
