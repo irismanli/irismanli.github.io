@@ -45,13 +45,13 @@ section {
   width: 100%;
   padding: 20px;
   background-color: #FFFFFF;
-  height: 500px;
+  height: 530px;
   position: relative;
   top: 60px;  
 }
 
 #creative-ID {
-   height: 700px;   
+   height: 750px;   
 }
 /*section:nth-child(1) {
   margin-top: 100px;
@@ -62,7 +62,7 @@ section {
 .title {
    position: relative;
    font-size: 1.5em;
-   top: 1rem;
+   top: 60px;
    -webkit-animation-name: topFadeIn; 
    animation-name: topFadeIn;
    -webkit-animation-duration: 1s;
@@ -112,8 +112,8 @@ section {
 
 .container {
   position: relative;
-  padding: 50px;
-  top: 3%;
+  padding: 30px;
+  top: 12%;
   width: 100%;
   
 }
@@ -139,10 +139,10 @@ section {
   position: relative;
   text-align: left;
   vertical-align: top;
-  left: 15%;
+  left: 5%;
   color: black;
   font-size: 1.1em;
-    height: 40px;
+  height: 20px;
 }
 
 .image_left {
