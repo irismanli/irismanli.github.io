@@ -16,21 +16,31 @@
   margin-top: 2px;
 }
  
-//To move navigation buttons outside use these settings:
+/* To move navigation buttons outside use these settings: */
  
+/* Hide all button groups by default; show only for the active carousel */
+.owl-theme .owl-controls .owl-buttons { display: none; }
+.active-carousel .owl-controls .owl-buttons { display: block; }
+
 .owl-theme .owl-controls .owl-buttons div {
-  position: absolute;
-  border: 1px solid red;
-  overflow: auto;
+  position: fixed;           /* pin to viewport edges */
+  border: none;              /* remove debug border */
+  background: rgba(0,0,0,0.35);
+  color: #fff;
+  padding: 8px 12px;
+  font-size: 28px;           /* larger for visibility */
+  line-height: 1;
+  cursor: pointer;
+  z-index: 9999;             /* above page content */
+  top: 50%;                  /* vertical center */
+  transform: translateY(-50%);
 }
- 
+
 .owl-theme .owl-controls .owl-buttons .owl-prev{
-  left: -45px;
-  top: 55px; 
+  left: 8px;                 /* at left screen edge with small inset */
 }
- 
+
 .owl-theme .owl-controls .owl-buttons .owl-next{
-  right: -45px;
-  top: 55px;
+  right: 8px;                /* at right screen edge with small inset */
 }
 

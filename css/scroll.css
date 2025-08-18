@@ -36,19 +36,23 @@ nav {
   padding: 15px;
   margin: auto;
   text-align: center;
-  width: 1000px; 
+  max-width: 1000px;
   color: whitesmoke;
 }
 
 
+/*
 section {
-  width: 100%;
-  padding: 20px;
-  background-color: #FFFFFF;
-  height: 530px;
-  position: relative;
-  top: 60px;  
+    width: 100%;
+    padding: 20px 0;
+    background-color: #FFFFFF;
+    min-height: 530px;
+    position: relative;
+    top: 60px;
 }
+ */
+/* alternatively: fully content-driven height */
+section { padding: 20px 0; background:#fff; position:relative; top:60px; }
 
 #creative-ID {
    height: 750px;   
@@ -111,11 +115,12 @@ section {
 }
 
 .container {
-  position: relative;
-  padding: 30px;
-  top: 12%;
-  width: 100%;
-  
+    position: relative;
+    padding: 20px 16px; /* a bit tighter on small screens */
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;  /* keeps content from stretching too wide on desktops */
+    top: 0;             /* remove vertical offset */
 }
 
 .overlay {
@@ -129,20 +134,28 @@ section {
 }*/
 
 .carousel_image {
-  position: relative;
-  left: 5%;
-  margin: auto;
-  float: center;
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    text-align: center; /* ensure child img can be centered */
+}
+.carousel_image img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block; /* or block + margin:0 auto */
 }
 
 .carousel_title {
-  position: relative;
-  text-align: left;
-  vertical-align: top;
-  left: 5%;
-  color: black;
-  font-size: 1.1em;
-  height: 20px;
+    position: relative;
+    text-align: left;
+    vertical-align: top;
+    left: 0;          /* remove 5% horizontal nudge */
+    color: black;
+    font-size: 1.1em;
+    height: auto;     /* let it expand with its text */
+    max-width: 1100px;
+    margin: 0 auto 8px; /* center within container and give spacing */
+    padding: 0 16px;     /* align with container inner padding */
 }
 
 .image_left {
@@ -306,4 +319,16 @@ footer a:hover {
 
 .visible {
   opacity: 1;
+}
+
+@media (max-width: 768px) {
+    nav { height: 72px; }
+    .title { top: 40px; font-size: 1.3em; }
+    section { top: 56px; padding: 16px 0; }
+    .container { padding: 16px; }
+}
+
+@media (max-width: 480px) {
+    .title { font-size: 1.2em; }
+    p, .carousel_title, .description { font-size: 1em; }
 }
