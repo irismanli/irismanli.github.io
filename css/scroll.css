@@ -77,6 +77,23 @@ section { padding: 20px 0; background:#fff; position:relative; top:60px; }
     color: honeydew;
 }
      
+/* Add these CSS rules to your stylesheet */
+.sample-title {
+  font-size: 1.2em; /* Adjust this value as needed - makes title larger than description */
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  line-height: 1.2;
+}
+
+.sample-description {
+  font-size: 0.9em; /* Base description font size */
+  line-height: 1.2;
+  font-weight: normal;
+}
+
+.carousel_title {
+  margin-bottom: 1em;
+}
 
 @-webkit-keyframes topFadeIn {
   0% {
